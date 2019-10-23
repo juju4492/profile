@@ -1,22 +1,3 @@
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
 body {
   background-color: #ffeecc;
   font-family: 'Roboto', sans-serif;
@@ -35,7 +16,6 @@ h1, h2, h3{
   color: red;
   font-family: 'Liu Jian Mao Cao', cursive;
   font-size :24px ;
-
 }
 
 a {
@@ -53,6 +33,32 @@ img{
 
 }
 
+i {
+  padding: 0 10px;
+}
+
+footer {
+  background: white;
+  margin: 20 30;                       /* White background */
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;                        /* Small radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+}
+
+.container {
+  margin: 20 30;
+  background: white;                         /* White background */
+  padding: 30px;                             /* Internal space */
+  border-radius: 4px;                        /* Small radius */
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
+}
+
+.card_head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .avatar {
   height: 48px;
@@ -60,22 +66,53 @@ img{
   border-radius: 50%:
 
 }
-.card {
-background: white;                         /* White background */
-padding: 30px;                             /* Internal space */
-border-radius: 4px;                        /* Small radius */
-box-shadow: 0 10px 30px rgba(0,0,0,.1);    /* Light shadow */
-text-align: center;
-margin-bottom: 12px;
+
+.fa-youtube-square {
+  color: red;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.fa-facebook-square {
+   color: green;
 }
 
-.container {
-  width: 500px;   /* This sets the width */
-  margin: 0 auto; /* This automatically sets left/right margins */
+.fa-twitter-square {
+   color: purple;
+}
+
+#top_card {
+ margin-top: 16px}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+    margin: 20 auto;
+  }
+    footer {
+    width: 700px;
+    margin: 20 auto;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+    margin: 20 auto;
+  }
+    footer {
+    width: 500px;
+    margin: 20 auto;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+    margin: 20 auto;
+  }
+  footer {
+    width: 300px;
+    margin: 20 auto;
+  }
 }
