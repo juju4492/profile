@@ -1,0 +1,14 @@
+langages:
+  Ruby: 3
+  JavaScript: 2
+  CSS: 3
+  HTML: 4
+frameworks:
+  Rails: 3
+  # ReactJS: 0
+  # VueJS: 0
+  # AngularJS: 0
+autre:
+  Git: 3
+  GitHub: 3
+  Heroku: 4
