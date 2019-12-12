@@ -4,3 +4,4 @@ gem 'middleman', '~> 4.2'
 gem 'middleman-autoprefixer', '~> 2.7'
 gem 'pry'
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
+gem 'opal', '~> 0.10.5'

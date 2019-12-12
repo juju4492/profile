@@ -1,6 +1,6 @@
-$primary-color: #163343;
-$secondary-color: #e3e9ed;
-$third-color: #1f485f;
+$primary-color: #FCDFA6;
+$secondary-color: #CBE896;
+$third-color: #A18276;
 $base-spacing: 1em;
 $small-spacing: $base-spacing / 2;
 $xsmall-spacing: $base-spacing / 4;
@@ -28,7 +28,7 @@ body {
 
 .banner {
   background: $primary-color;
-  color: #f0f0f0;
+  color: black;
   padding: $base-spacing;
 
   .banner-flex {
@@ -60,7 +60,7 @@ body {
 
   .full-name {
     margin-top: 0;
-    color: #d0d0d0;
+    color: black;
     font-size: 1.3em;
     margin: 0;
   }
