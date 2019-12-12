@@ -1,0 +1,20 @@
+
+- date: '2019'
+  duration: '9 semaines'
+  title: 'Bootcamp développeur web fullstack'
+  school: 'Le Wagon Lyon'
+- date: '2010/2013'
+  duration: '3 ans'
+  title: 'DUT Mesures Physiques'
+  school: 'IUT Saint-Nazaire'
+- date: '2009/2010'
+  duration: '1 an'
+  title: "Classe preparatoire aux ecoles d'ingenieur"
+  school: 'Lycée Artistide Briand, Saint-Nazaire'
+- date: '2009'
+  duration: '4 ans'
+  title: 'Bac S'
+  school: 'Lycée Saint-Louis, Saint-Nazaire'
+
+  body_html: '<div class="page-break"></div>'
+

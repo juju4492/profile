@@ -1,0 +1,91 @@
+<div class="banner">
+  <div class="container">
+    <div class="banner-flex">
+      <img src="<%= data.user.avatar_url %>">
+      <div class="main-informations">
+        <p class="full-name"><%= data.user.full_name %></p>
+        <h2 class="title"><%= data.user.title %></h2>
+        <p><i class="material-icons">info</i><%= data.user.date_of_birth %></p>
+        <p><i class="material-icons">phone</i><%= data.user.phone %></p>
+        <p><i class="material-icons">mail</i><%= data.user.email %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="skills">
+  <div class="container">
+    <div class="skills-container">
+      <% data.skills.each do |title, values| %>
+        <div class="skills-element" style="flex: 0 0 <%= 100 / data.skills.count %>%;">
+          <h3><%= title %></h3>
+          <ul class="skills-values">
+            <% values.each do |skill, rating| %>
+              <li class="skill">
+                <span class="title"><%= skill %></span>
+                <span class="rating">
+                  <% 5.times do |i| %>
+                    <span class="rating-element <%= 'active' if rating > i %>"></span>
+                  <% end %>
+                </span>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="category">
+      <h3 class="category-title">Work experiences</h3>
+      <% data.work.each do |experience| %>
+        <div class="experience">
+          <div class="experience-date">
+            <p class="date"><%= experience.date %></p>
+            <p class="duration"><%= experience.duration %></p>
+          </div>
+          <div class="experience-details">
+            <h3><%= experience.title %></h3>
+            <h4><%= experience.company_html %></h4>
+            <p><%= experience.body_html %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="category">
+      <h3 class="category-title">Education</h3>
+      <% data.education.each do |experience| %>
+        <div class="experience">
+          <div class="experience-date">
+            <p class="date"><%= experience.date %></p>
+            <p class="duration"><%= experience.duration %></p>
+          </div>
+          <div class="experience-details">
+            <h3><%= experience.title %></h3>
+            <h4><%= experience.school %></h4>
+            <% if experience.body_html.present? %>
+              <p><%= experience.body_html %></p>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="socials">
+  <div class="container">
+    <div class="socials-container">
+      <% data.user.socials.each do |social| %>
+        <div class="social-element">
+          <%= social.icon_html %>
+          <a href="<%= social.url %>"><%= social.username %></a>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
